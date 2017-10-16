@@ -1,0 +1,858 @@
+/*-----------------------------------------------------------------
+Template Name: bali Personal Portfolio Template
+Author       : Codexboss
+Version      : 1.0.0                                       
+-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+Table Of Index
+--------------------------------
+1. Reset css
+2. Style Css
+    2.1 Navigation
+    2.2 Banner
+    2.3 Seravices
+    2.4 About Me
+    2.5 Portfolio
+    2.6 Testimonial
+    2.7 Contact
+    2.8 footer
+    2.9 Extras
+3. Responsive Css
+-----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+					Start Default Settings
+----------------------------------------------------------------*/
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Raleway', sans-serif;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a,
+a:hover,
+a:focus,
+input,button,textarea{
+    text-decoration: none;
+    outline: none;
+}
+
+/*----------------------Typography Settings---------------------*/
+h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 90px;
+    text-transform: capitalize;
+}
+h2 {
+    color: #333;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+h5 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+p {
+    color: #666;
+    font-size: 14px;
+    line-height: 27px;
+    margin: 15px 0;
+    padding: 0;
+}
+
+/*--------------------------Spacing CSS-------------------------*/
+.pt-1 {
+    padding-top: 70px;
+}
+.pb-1 {
+    padding-bottom: 70px;
+}
+.ptb-1 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+/*-------------------------Alignment CSS------------------------*/
+.align-center {
+    text-align: center;
+}
+.align-justify {
+    text-align: justify;
+}
+
+
+/*-------------------------Color Settings-----------------------*/
+.bg-1 {
+    background: #f7f7f7;
+}
+.bg-2 {
+    background: #222;
+}
+.white {
+    color: #fff;
+}
+
+/*--------------------All Transition Settings-------------------*/
+.logo,
+header.header-area.sticky .logo,
+.main-menu .navbar-nav > li > a,
+.follow-me li a i,
+.follow-me-2 li a i,
+.portfolio-overlay,
+.hover-mask h4 a,
+.hover-mask i,
+.ftr-social-link ul li a i,
+.contact-icon i,
+.btn2 {
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+/*----------------------------------------------------------------
+					End Default Settings
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Header Section
+----------------------------------------------------------------*/
+header.header-area {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.logo {
+    padding-top: 30px;
+}
+.logo p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+header.header-area.sticky .logo{
+    padding-top: 20px;
+}
+header.header-area.sticky .logo p{
+    color: #333;
+}
+.navbar-nav > li {
+    display: inline-block;
+    padding: 0 17px;
+}
+.navbar-nav > li:last-child {
+    padding-right: 0;
+}
+.nav > li > a {
+    padding:0;
+}
+.main-menu .navbar-nav > li > a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 85px;
+    position: relative;
+    text-transform: uppercase;
+}
+.nav > li > a:focus, .nav > li:hover a {
+    color: #888;
+    background-color: transparent;
+}
+.main-menu .nav.navbar-nav li a i {
+    color: #888;
+    padding-left: 5px;
+}
+.navbar {
+    border: 0;
+    margin-bottom: 0;
+}
+.sticky .main-menu .navbar-nav > li > a{
+    color: #333;
+    line-height: 65px;
+}
+header.header-area.sticky .main-menu .navbar-nav li:hover a {
+    color: #888;
+}
+.sticky .main-menu .navbar-nav li.active a {
+    color: #888;
+}
+header.header-area.sticky {
+    position: fixed;
+    background: #f9f9f9;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -ms-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+}
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+header.header-area.sticky .navbar-toggle .icon-bar {
+    background: #333;
+}
+/*----------------------------------------------------------------
+                        Header Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start Banner Section
+----------------------------------------------------------------*/
+.banner-area.banner-1 {
+    background: url(../images/banner.jpg)50% no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner-area.banner-2 {
+    background: url(../images/slider/slider1.jpg)50% no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner-area.banner-1 #particles-js {
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.banner-area .background-video { 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    background-image: transparent;
+}
+.slider-title {
+    align-items: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    -o-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    height: 100vh;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
+.slider-title h1, .slider-title > h3, .slider-title p {
+    z-index: 9;
+}
+.slider-title p {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+.follow-me {
+    margin-top: 20px;
+}
+.follow-me li {
+    z-index: 9;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+.follow-me li a i {
+    color: #fff;
+    height: 28px;
+    width: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+}
+.follow-me li a:hover i {
+    color: #333;
+    background: #fff;
+}
+.overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+}
+/*----------------Animated headlines----------------*/
+.bali-words-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+ }
+
+.bali-words-wrapper b {
+    left: 0;
+    top: 0;
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    font-weight: 500;
+ }
+.bali-words-wrapper b.is-visible {
+    position: relative;
+ }
+.bali-words-wrapper b {
+    opacity: 0;
+ }
+.bali-words-wrapper b.is-visible {
+    opacity: 1;
+ }
+.bali-headline.clip span {
+    display: inline-block;
+    padding: 15px 0;
+ }
+.bali-headline.clip .bali-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+ }
+/*----------------------------------------------------------------
+                        End Banner Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start About Section
+----------------------------------------------------------------*/
+.follow-me-2 {
+    padding-top: 30px;
+}
+.follow-me-2 li {
+    display: inline-block;
+    margin-right: 8px;
+}
+.follow-me-2 li a i {
+    border: 1px solid #666;
+    border-radius: 50%;
+    color: #666;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+}
+.follow-me-2::before {
+    background: #999;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 140px;
+    bottom: 15px;
+    left: 215px;
+}
+.follow-me-2::after {
+    background: #999;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 140px;
+    bottom: 15px;
+    right: 215px;
+}
+.follow-me-2 li:last-child {
+    margin-right: 0;
+}
+.follow-me-2 li a:hover i {
+    color: #fff;
+    background: #333;
+    border: 1px solid #333;
+}
+/*----------------------------------------------------------------
+                        End About Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start Service Section
+----------------------------------------------------------------*/
+.service-area {
+    padding-bottom: 50px;
+}
+.service-single-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+.service-icon i {
+    color: #555;
+    display: block;
+    font-size: 35px;
+}
+.service-single-item > h3 {
+    color: #555;
+    font-size: 22px;
+    line-height: 62px;
+}
+.service-single-item:hover {
+    cursor: pointer;
+}
+/*----------------------------------------------------------------
+                        End Service Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start User quotes Section
+----------------------------------------------------------------*/
+.user-quotes p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+.user-quotes h5 {
+    color: #fff;
+    font-size: 17px;
+    padding-top: 13px;
+}
+/*----------------------------------------------------------------
+                        End User quotes Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start Portfolio Section
+----------------------------------------------------------------*/
+.portfolio-area {
+    padding-bottom: 70px;
+}
+.project-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+.project-image > img {
+    width: 100%;
+}
+.portfolio-overlay {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    background: rgba(255,255,255,0.9);
+}
+.hover-mask h4 a{
+    top: 10%;
+    left: 50%;
+    color: #333;;
+    font-size: 16px;
+    position: absolute;
+    display: inline-block;
+    text-transform: capitalize;
+    transform: translateX(-50%);
+}
+.hover-mask h4 a::before {
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background: #333;
+    position: absolute;
+}
+.hover-mask i {
+    bottom: 10%;
+    color: #333;
+    font-size: 22px;
+    height: 45px;
+    left: 50%;
+    line-height: 45px;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 45px;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+.project-item:hover .portfolio-overlay {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.project-item:hover .hover-mask h4 a{
+    top: 30%;
+}
+.project-item:hover .hover-mask i {
+    bottom: 30%;
+}
+.portfolio-menu {
+    text-align: center;
+    padding-bottom: 35px;
+}
+.portfolio-menu > li {
+    color: #555;
+    font-size: 15px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.portfolio-menu > li:last-child {
+    margin-right: 0;
+}
+.portfolio-menu > li.active {
+    color: #333;
+}
+/*----------------------------------------------------------------
+                        End Portfolio Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start Client Section
+----------------------------------------------------------------*/
+.client-area {
+    background: url(../images/client.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.client-img > img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.client-say h5 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 15px;
+    text-transform: capitalize;
+}
+.client-single-item > span {
+    color: #fff;
+    text-transform: capitalize;
+}
+.white > span {
+    font-size: 20px;
+    padding: 0 5px;
+    vertical-align: -moz-middle-with-baseline;
+}
+.client-area .client-img img {
+    width: auto;
+    display: inline-block;
+}
+.client-single-item:hover {
+    cursor: move;
+}
+/*----------------------------------------------------------------
+                        End Client Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start Contact Section
+----------------------------------------------------------------*/
+.contact-info {
+    margin-bottom: 40px;
+}
+.contact-icon {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #666;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.contact-icon i {
+    color: #666;
+    font-size: 25px;
+    line-height: 50px;
+    display: block;
+}
+.single-contact-info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.single-contact-info:hover .contact-icon i {
+    color: #fff;
+    background: #333;
+}
+.single-contact-field {
+    margin-bottom: 20px;
+}
+.single-contact-field .text-field {
+    font-size: 14px;
+    height: 50px;
+    line-height: 20px;
+    padding: 0 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.single-contact-field textarea {
+    height: 150px;
+    width: 100%;
+    line-height: 20px;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+}
+.btn2 {
+    background: #333;
+    color: #fff;
+    width: 100%;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: capitalize;
+    border: 1px solid #333;
+}
+.btn2:hover {
+    background: #fff;
+    color: #222;
+    border: 1px solid #ccc;
+}
+.success {
+    background: #222;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+/*----------------------------------------------------------------
+                        End Contact Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start Footer Section
+----------------------------------------------------------------*/
+.copy-right > p {
+    color: #fff;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+.ftr-social-link {
+    padding: 42px 0;
+}
+.ftr-social-link ul li{
+    margin-left: 10px;
+    display: inline-block;
+}
+.ftr-social-link ul li a i {
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.ftr-social-link ul li:first-child {
+    margin-left: 0;
+}
+.ftr-social-link ul li:hover a i {
+    color: #333;
+    background: #fff;
+}
+/*-------------Scroll To Top-------------*/
+.scroll-top {
+    height: 35px;
+    width: 35px;
+    background: #222;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    bottom: 50px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.scroll-top i {
+    line-height: 35px;
+    color: #fff;
+    font-size: 24px;
+}
+.not-visible {
+    visibility: hidden;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+}
+/*----------------------------------------------------------------
+                        End Footer Section
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+                        Start Preloader Section
+----------------------------------------------------------------*/
+.loader-overlay {
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+.preloader {
+    background: #333;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+}
+.preloader-inner-area {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.l-preloader {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.c-preloader {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.c-preloader::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    animation-name: preloading;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.c-preloader::after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    animation-name: preloading;
+    animation-duration: 1.2s;
+    animation-delay: -0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes preloading {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+/*----------------------------------------------------------------
+                        End Preloader Section
+----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

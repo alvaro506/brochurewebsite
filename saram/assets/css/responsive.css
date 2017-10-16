@@ -1,0 +1,152 @@
+/*========================================================================================
+                                 Start Responsive Style
+========================================================================================*/
+
+/*==================Large Display==============*/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .container{
+        width: 970px;
+    }
+    .follow-me-2::before {
+        left: 140px;
+    }
+    .follow-me-2::after {
+        right: 140px;
+    }
+    
+}
+
+/*==================Medium Display==============*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 750px;
+    }
+    .follow-me-2::before {
+        left: 110px;
+    }
+    .follow-me-2::after {
+        right: 110px;
+    }
+    
+}
+
+/*============ Tab Display==============*/
+@media only screen and (max-width: 767px){
+    .container{
+        width: 450px;
+    }
+    .ptb-1 {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .logo p{
+        line-height: 55px;
+    }
+    header.header-area.sticky .logo {
+        padding-top: 8px;
+    }
+    .navbar-toggle {
+        margin-top: -44px;
+        margin-right: 0;
+        cursor: pointer;
+        padding-right: 0;
+    }
+    .navbar{
+        min-height: 0;
+    }
+    .nav.navbar-nav.navbar-right > li {
+        background: #f9f9f9;
+        border-bottom: 1px solid #444;
+    }
+    .navbar-nav > li {
+        display: block;
+        margin-right: 0;
+        padding: 0;
+    }
+    .nav.navbar-nav.navbar-right > li:last-child{
+        border-bottom: 1px solid transparent;
+    }
+    .main-menu .navbar-nav > li > a {
+        line-height: 50px;
+        color: #333;
+    }
+    header.sticky .header-area .navbar-nav > li {
+        padding-left: 0;
+    }
+    .sticky .main-menu .navbar-nav > li > a {
+        color: #333;
+        line-height: 50px;
+    }
+    .navbar-collapse {
+        box-shadow: none;
+    }
+}
+
+/*=============Medium Mobile Screen==============*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .ptb-1 {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .follow-me-2::before {
+        left: 45px;
+        width: 60px;
+    }
+    .follow-me-2::after {
+        right: 45px;
+        width: 60px;
+    }
+    .service-single-item {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .single-contact-info {
+        margin-bottom: 30px;
+    } 
+}
+
+/*============Small Mobile Display==============*/
+@media only screen and (min-width: 300px) and (max-width: 479px) {
+    .container {
+        width: 300px;
+    }
+    .ptb-1 {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 36px;
+    }
+    h5 {
+        font-size: 17px;
+    }
+    .follow-me-2::before {
+        display: none;
+    }
+    .follow-me-2::after {
+        display: none;
+    }
+    .portfolio-menu > li {
+        margin-right: 8px;
+    }
+    .project-item:hover .hover-mask h4 {
+        top: 25%;
+    }
+    .project-item:hover .hover-mask i {
+        bottom: 25%;
+    }
+    .single-contact-info {
+        margin-bottom: 30px;
+    }
+}
