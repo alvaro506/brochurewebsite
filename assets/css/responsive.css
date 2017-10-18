@@ -2,6 +2,20 @@
                                  Start Responsive Style
 ========================================================================================*/
 
+/*==================Desktop only==============*/
+@media only screen and (min-width: 1200px) {
+    .banner-area.banner-2 {
+        background: url(../images/slider/slider1.jpg)no-repeat bottom center;
+    }
+}
+
+/*==================Large Display and Foward==============*/
+@media only screen and (min-width: 992px) {
+    .service-area .col-sm-6 {
+        min-height: 260px;
+    }
+}
+
 /*==================Large Display==============*/
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .container{
@@ -13,7 +27,10 @@
     .follow-me-2::after {
         right: 140px;
     }
-    
+
+    .service-area .col-sm-6 {
+        min-height: 275px;
+    }
 }
 
 /*==================Medium Display==============*/
@@ -27,10 +44,22 @@
     .follow-me-2::after {
         right: 110px;
     }
-    
+    .service-area .col-sm-6 {
+        min-height: 337px;
+    } 
+    .service-area .col-sm-6:nth-child(2) h3 {
+        line-height: 70px;
+    } 
 }
 
-/*============ Tab Display==============*/
+/*==================Medium Display and Foward==============*/
+@media only screen and (min-width: 768px){
+    .navbar-collapse.collapse {
+        margin-top: 10px;
+    } 
+}
+
+/*============Tab Display==============*/
 @media only screen and (max-width: 767px){
     .container{
         width: 450px;
@@ -46,7 +75,7 @@
         padding-top: 8px;
     }
     .navbar-toggle {
-        margin-top: -44px;
+        margin-top: -60px;
         margin-right: 0;
         cursor: pointer;
         padding-right: 0;

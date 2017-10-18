@@ -212,6 +212,11 @@ header.header-area.sticky {
     -ms-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
     -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
 }
 .navbar-toggle .icon-bar {
     background: #fff;
@@ -238,6 +243,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     background: url(../images/slider/slider1.jpg)50% no-repeat fixed;
     -webkit-background-size: cover;
     background-size: cover;
+    background-position: bottom;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -317,7 +323,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.5);
 }
 /*----------------Animated headlines----------------*/
 .bali-words-wrapper {
@@ -423,7 +429,8 @@ header.header-area.sticky .navbar-toggle .icon-bar {
 .service-single-item > h3 {
     color: #555;
     font-size: 22px;
-    line-height: 62px;
+    line-height: 35px;
+    margin-top: 15px;
 }
 .service-single-item:hover {
     cursor: pointer;
@@ -626,10 +633,31 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     line-height: 50px;
     display: block;
 }
+.single-contact-info {
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: none;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
 .single-contact-info p {
     font-size: 16px;
     font-weight: 400;
 }
+.single-contact-info:hover {
+    border: 1px solid #333;
+    border-top: none;
+    border-bottom: none;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+} 
 .single-contact-info:hover .contact-icon i {
     color: #fff;
     background: #333;
@@ -687,7 +715,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
 ----------------------------------------------------------------*/
 .copy-right > p {
     color: #fff;
-    margin-bottom: 35px;
+    margin: 30px;
     text-transform: capitalize;
 }
 .ftr-social-link {
