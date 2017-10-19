@@ -60,6 +60,24 @@
         margin-bottom: 30px;
         width: 65%;
     }
+    .owl-stage-outer {
+        padding-top: 30px;
+    }
+    .owl-stage-outer .owl-item .client-info {
+        width: 50%;
+    }
+    .owl-stage-outer .owl-item .client-info, .client-progress {
+        display: inline-block;
+        float: left;
+        
+    }
+     .client-progress {
+         float: right;
+         width: 40%;
+    }
+    .client-progress  img {
+        width: 100%;
+    }
 }
 /*==================Medium Display and Foward==============*/
 @media only screen and (min-width: 768px){

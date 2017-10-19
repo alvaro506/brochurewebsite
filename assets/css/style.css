@@ -13,11 +13,10 @@ Table Of Index
     2.2 Banner
     2.3 Seravices
     2.4 About Me
-    2.5 Portfolio
-    2.6 Testimonial
-    2.7 Contact
-    2.8 footer
-    2.9 Extras
+    2.5 Testimonies
+    2.6 Contact
+    2.7 footer
+    2.8 Extras
 3. Responsive Css
 -----------------------------------------------------------------*/
 
@@ -558,118 +557,13 @@ header.header-area.sticky .navbar-toggle .icon-bar {
 }
 /*----------------------------------------------------------------
                         End Training Section
-----------------------------------------------------------------*/
+----------------------------------------------------------------*
 
 /*----------------------------------------------------------------
-                        Start Portfolio Section
-----------------------------------------------------------------*/
-.portfolio-area {
-    padding-bottom: 70px;
-}
-.project-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-.project-image > img {
-    width: 100%;
-}
-.portfolio-overlay {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    visibility: hidden;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    -ms-opacity: 0;
-    -o-opacity: 0;
-    opacity: 0;
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-    background: rgba(255,255,255,0.9);
-}
-.hover-mask h4 a{
-    top: 10%;
-    left: 50%;
-    color: #333;;
-    font-size: 16px;
-    position: absolute;
-    display: inline-block;
-    text-transform: capitalize;
-    transform: translateX(-50%);
-}
-.hover-mask h4 a::before {
-    left: 0;
-    bottom: -10px;
-    width: 100%;
-    height: 1px;
-    content: "";
-    background: #333;
-    position: absolute;
-}
-.hover-mask i {
-    bottom: 10%;
-    color: #333;
-    font-size: 22px;
-    height: 45px;
-    left: 50%;
-    line-height: 45px;
-    position: absolute;
-    text-align: center;
-    transform: translateX(-50%);
-    width: 45px;
-    border: 1px solid #333;
-    border-radius: 50%;
-}
-.project-item:hover .portfolio-overlay {
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    -ms-opacity: 1;
-    -o-opacity: 1;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-}
-.project-item:hover .hover-mask h4 a{
-    top: 30%;
-}
-.project-item:hover .hover-mask i {
-    bottom: 30%;
-}
-.portfolio-menu {
-    text-align: center;
-    padding-bottom: 35px;
-}
-.portfolio-menu > li {
-    color: #555;
-    font-size: 15px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: inline-block;
-    text-transform: capitalize;
-}
-.portfolio-menu > li:last-child {
-    margin-right: 0;
-}
-.portfolio-menu > li.active {
-    color: #333;
-}
-/*----------------------------------------------------------------
-                        End Portfolio Section
-----------------------------------------------------------------*/
-
-/*----------------------------------------------------------------
-                        Start Client Section
+                        Start Testimonies Section
 ----------------------------------------------------------------*/
 .client-area {
-    background: url(../images/slider/testimonies.jpg)50% no-repeat fixed;
+    background: url(../images/client.jpg)50% no-repeat fixed;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
@@ -691,7 +585,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     padding-top: 15px;
     text-transform: capitalize;
 }
-.client-single-item > span {
+.client-single-item span {
     color: #fff;
     text-transform: capitalize;
 }
@@ -707,8 +601,24 @@ header.header-area.sticky .navbar-toggle .icon-bar {
 .client-single-item:hover {
     cursor: move;
 }
+.client-progress {
+    display: none;
+    overflow: visible;
+    position: relative;
+}
+.client-progress .fa-trophy {
+    background: #333;
+    border-radius: 50%;
+    color: #FFD700;
+    font-size: 30px;
+    left: -25px;
+    padding: 10px;
+    position: absolute;
+    top: -25px;
+}
+
 /*----------------------------------------------------------------
-                        End Client Section
+                        End Testimonies Section
 ----------------------------------------------------------------*/
 
 /*----------------------------------------------------------------
@@ -737,7 +647,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     display: block;
 }
 .single-contact-info {
-    border: 1px solid #fff;
+    border: 1px solid #f7f7f7;
     border-top: none;
     border-bottom: none;
     -webkit-transition: .5s;
@@ -765,6 +675,14 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     color: #fff;
     background: #333;
 }
+.contact-field-area input, .contact-field-area textarea {
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
 .contact-field-area input:hover, .contact-field-area input:focus, .contact-field-area textarea:hover, .contact-field-area textarea:focus {
     border: 1px solid #333;
     -webkit-transition: .5s;
@@ -976,22 +894,3 @@ header.header-area.sticky .navbar-toggle .icon-bar {
 /*----------------------------------------------------------------
                         End Preloader Section
 ----------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
