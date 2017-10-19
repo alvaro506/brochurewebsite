@@ -21,8 +21,22 @@
 	  	/*-------------------------------------------------------------------
 	  					For Parallax Js
 	  	-------------------------------------------------------------------*/
-	  	$('.banner-area').parallax('50%','.3');
-      
+		selectiveBackground();
+		$(window).resize( function() {
+			 selectiveBackground();
+		});
+
+		function selectiveBackground () {
+			if ( $(window).width() >= 12000 ) {
+				$('.banner-area').parallax('50%','.3');	
+			} else {
+				if ( $(window).width() >= 767 ) {
+					$('.banner-area').parallax('73%','.3');
+				}else{
+					$('.banner-area').parallax('83%','.3');
+				}
+			}
+		}
 	    /*-------------------------------------------------------------------
 	  					For Scroll Spy
 	  	-------------------------------------------------------------------*/
