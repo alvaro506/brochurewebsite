@@ -2,6 +2,71 @@
                                  Start Responsive Style
 ========================================================================================*/
 
+/*==================Desktop only==============*/
+@media only screen and (min-width: 1200px) {
+    .training-area .service-single-item  > ul {
+        margin: auto;
+        min-height: 200px;
+    }
+    .private-session .service-single-item > ul, .private-session .service-single-item > div {
+        width: 45%;
+        margin: auto;
+    }
+    .semi-private-session .service-single-item > ul , .semi-private-session .service-single-item > div {
+        width: 55%;
+        margin: auto;
+    }
+    .service-area .col-sm-6:nth-child(2) h3 {
+        line-height: 70px;
+    }
+}
+
+/*==================Large Display and Foward==============*/
+@media only screen and (min-width: 992px) {
+    .service-area .col-sm-6 {
+        min-height: 280px;
+    }
+    .training-area ul {
+        min-height: 100px;
+    }
+    .about-area div.col-md-11 {
+        margin: 0 auto;
+        float: none;
+        padding: 0 30px;
+    }
+
+    .follow-me ul {
+        width: 120px;
+    }
+    .follow-me li a i {
+        font-size: 25px;
+        height: 35px;
+        padding-left: 1px;
+        padding-top: 5px;
+        width: 35px;
+    }
+
+    .follow-me li:first-child {
+        float: left;
+    }
+
+    .follow-me li:last-child {
+        float: right;
+    }
+    .follow-me h1 {
+        font-size: 55px;
+        line-height: 100px;
+        text-align: left;
+        margin-bottom: 30px;
+        width: 65%;
+    }
+}
+/*==================Medium Display and Foward==============*/
+@media only screen and (min-width: 768px){
+    .navbar-collapse.collapse {
+        margin-top: 10px;
+    } 
+}
 /*==================Large Display==============*/
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .container{
@@ -13,7 +78,25 @@
     .follow-me-2::after {
         right: 140px;
     }
-    
+
+    .service-area .col-sm-6 {
+        min-height: 308px;
+    }
+    .training-area .service-single-item  > ul {
+        margin: auto;
+        min-height: 210px;
+    }
+    .semi-private-session .service-single-item > ul, .semi-private-session .service-single-item > div {
+        width: 70%;
+        margin: auto;
+    }
+    .private-session .service-single-item > ul, .private-session .service-single-item > div {
+        width: 55%;
+        margin: auto;
+    }
+    .service-area .col-sm-6:nth-child(2) h3 {
+        line-height: 70px;
+    }
 }
 
 /*==================Medium Display==============*/
@@ -21,16 +104,42 @@
     .container{
         width: 750px;
     }
+    .follow-me h1 {
+        font-size: 40px;
+        line-height: 60px;
+        text-align: left;
+        width: 65%;
+    }
     .follow-me-2::before {
         left: 110px;
     }
     .follow-me-2::after {
         right: 110px;
     }
-    
+    .service-area .col-sm-6 {
+        min-height: 398px;
+    } 
+    .training-area .service-single-item  > ul {
+        margin: auto;
+        min-height: 210px;
+    }
+    .semi-private-session .service-single-item > ul, .semi-private-session .service-single-item > div {
+        width: 90%;
+        margin: auto;
+    }
+    .private-session .service-single-item > ul {
+        width: 75%;
+    }
+    .private-session .service-single-item > div {
+        width: 80%;
+        margin: auto;
+    }
+    .service-area .col-sm-6:nth-child(2) h3 {
+        line-height: 70px;
+    } 
 }
 
-/*============ Tab Display==============*/
+/*============Tab Display==============*/
 @media only screen and (max-width: 767px){
     .container{
         width: 450px;
@@ -46,7 +155,7 @@
         padding-top: 8px;
     }
     .navbar-toggle {
-        margin-top: -44px;
+        margin-top: -60px;
         margin-right: 0;
         cursor: pointer;
         padding-right: 0;
@@ -80,6 +189,12 @@
     .navbar-collapse {
         box-shadow: none;
     }
+    .training-area .service-single-item {
+        margin-bottom: 80px;
+    }
+    .training-area .sessions-cost {
+        margin-top: 40px;
+    }
 }
 
 /*=============Medium Mobile Screen==============*/
@@ -109,6 +224,10 @@
     .single-contact-info {
         margin-bottom: 30px;
     } 
+    .follow-me h1 {
+        text-align: center;
+        line-height: 80px;
+    }
 }
 
 /*============Small Mobile Display==============*/
