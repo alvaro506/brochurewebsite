@@ -47,11 +47,11 @@
     .owl-stage-outer .owl-item .client-info {
         width: 50%;
     }
-    .client-info .white, .client-info .client-img {
-        display: inline-block;
-    }
     .owl-stage-outer .owl-item .client-info, .client-progress {
         float: left;
+    }
+    .client-info .white, .client-info .client-img {
+        display: inline-block;
     }
      .client-progress {
          float: right;
