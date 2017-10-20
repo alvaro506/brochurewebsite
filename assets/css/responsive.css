@@ -37,34 +37,17 @@
     .follow-me li:first-child {
         float: left;
     }
-
     .follow-me li:last-child {
         float: right;
     }
-    .owl-stage-outer .owl-stage {
-        padding-top: 30px;
-    }
-    .owl-stage-outer .owl-item .client-info {
-        width: 50%;
-    }
-    .owl-stage-outer .owl-item .client-info, .client-progress {
-        float: left;
-    }
-    .client-info .white, .client-info .client-img {
-        display: inline-block;
-    }
-     .client-progress {
-         float: right;
-         width: 40%;
-    }
-    .client-progress  img {
-        width: 100%;
+    .client-progress {
+         margin-top: 0;
     }
 }
 /*==================Medium Display and Foward==============*/
 @media only screen and (min-width: 768px){
     .navbar-collapse.collapse {
-        margin-top: 10px;
+        margin-top: 20px;
     } 
     .follow-me h1 {
         font-size: 40px;
@@ -78,6 +61,32 @@
         padding-left: 1px;
         padding-top: 5px;
         width: 35px;
+    }
+        .owl-stage-outer .owl-stage {
+        padding-top: 30px;
+    }
+    .owl-stage-outer .owl-item .client-info {
+        width: 50%;
+    }
+    .owl-stage-outer .owl-item .client-info {
+        float: left;
+    }
+    .client-info .white, .client-info .client-img {
+        display: inline-block;
+    }
+    .client-progress {
+        margin-top: 20px;
+         float: right;
+         width: 40%;
+    }
+    .client-progress .fa-trophy {
+        display: block;
+    }
+    .client-progress img {
+        width: 100%;
+    }
+    .client-info p {
+        font-size: 14px;
     }
 }
 /*==================Large Display==============*/

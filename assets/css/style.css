@@ -89,7 +89,7 @@ p {
     padding-top: 70px;
 }
 .pb-1 {
-    padding-bottom: 70px;
+    padding-bottom: 45px;
 }
 .ptb-1 {
     padding-top: 90px;
@@ -167,16 +167,16 @@ header.header-area {
     font-weight: 600;
     text-transform: capitalize;
 }
-header.header-area.sticky .logo{
+header.header-area.sticky .logo {
     padding-top: 20px;
 }
-header.header-area.sticky .logo p{
+header.header-area.sticky .logo p,header.header-area.open .logo p {
     color: #333;
     margin-top: 5px;
 }
 .navbar-nav > li {
     display: inline-block;
-    padding: 0 17px;
+    padding: 0 10px;
 }
 .navbar-nav > li:last-child {
     padding-right: 0;
@@ -211,7 +211,27 @@ header.header-area.sticky .logo p{
 header.header-area.sticky .main-menu .navbar-nav li:hover a {
     color: #888;
 }
-.sticky .main-menu .navbar-nav li.active a {
+header.header-area {
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+header.header-area.open {
+    background: #fff;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -ms-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.sticky .main-menu .navbar-nav li.active a, header {
     color: #888;
 }
 header.header-area.sticky {
@@ -231,7 +251,7 @@ header.header-area.sticky {
 .navbar-toggle .icon-bar {
     background: #fff;
 }
-header.header-area.sticky .navbar-toggle .icon-bar {
+header.header-area.sticky .navbar-toggle .icon-bar, header.header-area.open .navbar-toggle .icon-bar {
     background: #333;
 }
 /*----------------------------------------------------------------
@@ -402,9 +422,6 @@ header.header-area.sticky .navbar-toggle .icon-bar {
 /*----------------------------------------------------------------
                         Start About Section
 ----------------------------------------------------------------*/
-.about-area .section-title {
-    padding-bottom: 20px;
-}
 .follow-me-2 {
     padding-top: 35px;
 }
@@ -470,6 +487,11 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     color: #555;
     display: block;
     font-size: 35px;
+}
+.service-icon img {
+    height: 40px;
+    margin: 0 auto;
+    width: 40px;
 }
 .service-single-item > h3 {
     color: #555;
@@ -613,7 +635,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     display: none;
 }
 .client-progress {
-    margin-right: 10px;
+    margin: 30px 10px 0 0;
     overflow: visible;
     position: relative;
     -webkit-transition: .5s;
@@ -634,11 +656,15 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     background: #333;
     border-radius: 50%;
     color: #FFD700;
+    display: none;
     font-size: 30px;
     left: -15px;
     padding: 10px;
     position: absolute;
     top: -15px;
+}
+.client-info p {
+    font-size: 12px;
 }
 
 /*----------------------------------------------------------------

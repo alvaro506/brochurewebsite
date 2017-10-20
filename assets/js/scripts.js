@@ -5,7 +5,7 @@
 	  					For Sticky Menu
 	  	-------------------------------------------------------------------*/
 	  	$(window).on('scroll',function(){
-		   if($(this).scrollTop() > 100){
+		   if ( $(this).scrollTop() > 100  ){
 		   $('header').addClass('sticky');
 		}
 		else{
@@ -112,5 +112,12 @@
 	  					For Preloader js
 	  	-------------------------------------------------------------------*/
 	  	$('.preloader').fadeOut('slow');
+
+		/*-------------------------------------------------------------------
+	  					For nav options js
+	  	-------------------------------------------------------------------*/
+		$('button.navbar-toggle').on('click',function (event) {
+			$('.header-area').toggleClass('open');
+	    });
 	   
 })(jQuery);
