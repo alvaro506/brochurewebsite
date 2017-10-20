@@ -16,9 +16,6 @@
         width: 55%;
         margin: auto;
     }
-    .service-area .col-sm-6:nth-child(2) h3 {
-        line-height: 70px;
-    }
 }
 
 /*==================Large Display and Foward==============*/
@@ -34,9 +31,29 @@
         float: none;
         padding: 0 30px;
     }
-
     .follow-me ul {
         width: 120px;
+    }
+    .follow-me li:first-child {
+        float: left;
+    }
+    .follow-me li:last-child {
+        float: right;
+    }
+    .client-progress {
+         margin-top: 0;
+    }
+}
+/*==================Medium Display and Foward==============*/
+@media only screen and (min-width: 768px){
+    .navbar-collapse.collapse {
+        margin-top: 20px;
+    } 
+    .follow-me h1 {
+        font-size: 40px;
+        line-height: 75px;
+        margin: 0 auto;
+        width: 52%;
     }
     .follow-me li a i {
         font-size: 25px;
@@ -45,45 +62,32 @@
         padding-top: 5px;
         width: 35px;
     }
-
-    .follow-me li:first-child {
-        float: left;
-    }
-
-    .follow-me li:last-child {
-        float: right;
-    }
-    .follow-me h1 {
-        font-size: 55px;
-        line-height: 100px;
-        text-align: left;
-        margin-bottom: 30px;
-        width: 65%;
-    }
-    .owl-stage-outer {
+        .owl-stage-outer .owl-stage {
         padding-top: 30px;
     }
     .owl-stage-outer .owl-item .client-info {
         width: 50%;
     }
-    .owl-stage-outer .owl-item .client-info, .client-progress {
-        display: inline-block;
+    .owl-stage-outer .owl-item .client-info {
         float: left;
-        
     }
-     .client-progress {
+    .client-info .white, .client-info .client-img {
+        display: inline-block;
+    }
+    .client-progress {
+        margin-top: 20px;
          float: right;
          width: 40%;
     }
-    .client-progress  img {
+    .client-progress .fa-trophy {
+        display: block;
+    }
+    .client-progress img {
         width: 100%;
     }
-}
-/*==================Medium Display and Foward==============*/
-@media only screen and (min-width: 768px){
-    .navbar-collapse.collapse {
-        margin-top: 10px;
-    } 
+    .client-info p {
+        font-size: 14px;
+    }
 }
 /*==================Large Display==============*/
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -112,9 +116,6 @@
         width: 55%;
         margin: auto;
     }
-    .service-area .col-sm-6:nth-child(2) h3 {
-        line-height: 70px;
-    }
 }
 
 /*==================Medium Display==============*/
@@ -125,8 +126,7 @@
     .follow-me h1 {
         font-size: 40px;
         line-height: 60px;
-        text-align: left;
-        width: 65%;
+        
     }
     .follow-me-2::before {
         left: 110px;
@@ -242,10 +242,6 @@
     .single-contact-info {
         margin-bottom: 30px;
     } 
-    .follow-me h1 {
-        text-align: center;
-        line-height: 80px;
-    }
 }
 
 /*============Small Mobile Display==============*/

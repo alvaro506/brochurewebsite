@@ -5,7 +5,7 @@
 	  					For Sticky Menu
 	  	-------------------------------------------------------------------*/
 	  	$(window).on('scroll',function(){
-		   if($(this).scrollTop() > 100){
+		   if ( $(this).scrollTop() > 100  ){
 		   $('header').addClass('sticky');
 		}
 		else{
@@ -27,15 +27,7 @@
 		});
 
 		function selectiveBackground () {
-			if ( $(window).width() >= 12000 ) {
-				$('.banner-area').parallax('50%','.3');	
-			} else {
-				if ( $(window).width() >= 767 ) {
-					$('.banner-area').parallax('73%','.3');
-				}else{
-					$('.banner-area').parallax('83%','.3');
-				}
-			}
+			$('.banner-area').parallax('50%','.3');	
 		}
 	    /*-------------------------------------------------------------------
 	  					For Scroll Spy
@@ -118,5 +110,12 @@
 	  					For Preloader js
 	  	-------------------------------------------------------------------*/
 	  	$('.preloader').fadeOut('slow');
+
+		/*-------------------------------------------------------------------
+	  					For nav options js
+	  	-------------------------------------------------------------------*/
+		$('button.navbar-toggle').on('click',function (event) {
+			$('.header-area').toggleClass('open');
+	    });
 	   
 })(jQuery);
