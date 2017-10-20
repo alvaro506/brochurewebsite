@@ -27,14 +27,8 @@
 		});
 
 		function selectiveBackground () {
-			if ( $(window).width() >= 12000 ) {
+			if ( $(window).width() >= 1200 ) {
 				$('.banner-area').parallax('50%','.3');	
-			} else {
-				if ( $(window).width() >= 767 ) {
-					$('.banner-area').parallax('73%','.3');
-				}else{
-					$('.banner-area').parallax('83%','.3');
-				}
 			}
 		}
 	    /*-------------------------------------------------------------------

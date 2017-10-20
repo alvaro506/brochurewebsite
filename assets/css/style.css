@@ -114,7 +114,7 @@ p {
 
 /*-------------------------Color Settings-----------------------*/
 .service-area.ptb-1 {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .bg-1 {
     background: #f7f7f7;
@@ -251,7 +251,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     position: relative;
 }
 .banner-area.banner-2 {
-    background: url(../images/slider/slider3.jpg)90% no-repeat fixed;
+    background: url(../images/slider/slider11.jpg)50% no-repeat fixed;
     -webkit-background-size: cover;
     background-size: cover;
     width: 100%;
@@ -298,11 +298,11 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     -o-flex-flow: column nowrap;
     flex-flow: column nowrap;
     height: 100vh;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
     width: 100%;
 }
 .slider-title h1, .slider-title > h3, .slider-title p {
@@ -320,18 +320,27 @@ header.header-area.sticky .navbar-toggle .icon-bar {
     padding-bottom: 60px;
     width: 100%;
 }
-.follow-me h1 {
+.follow-me h1 {   
+    font-size: 20px;
+    line-height: 40px;
     text-align: center;
 }
 .follow-me ul {
-    margin: 0 auto;
-    width: fit-content;
+    margin: 8px auto 0;
+    overflow: hidden;
+    position: relative;
+    width: 70px;
 }
 .follow-me li {
     z-index: 9;
-    margin-right: 10px;
     position: relative;
     display: inline-block;
+}
+.follow-me li:first-child {
+    float: left;
+}
+.follow-me li:last-child {
+    float: right;
 }
 .follow-me li a i {
     color: #fff;
@@ -564,9 +573,7 @@ header.header-area.sticky .navbar-toggle .icon-bar {
                         Start Testimonies Section
 ----------------------------------------------------------------*/
 .client-area {
-    background: url(../images/client.jpg)50% no-repeat fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: #333;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -602,12 +609,26 @@ header.header-area.sticky .navbar-toggle .icon-bar {
 .client-single-item:hover {
     cursor: move;
 }
-.client-progress {
-    box-shadow: 0px 4px 12px #000;
+.client-info .white, .client-info .client-img {
     display: none;
+}
+.client-progress {
     margin-right: 10px;
     overflow: visible;
     position: relative;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.client-progress:hover {
+    box-shadow: 0px 4px 12px #000;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
 }
 .client-progress .fa-trophy {
     background: #333;
