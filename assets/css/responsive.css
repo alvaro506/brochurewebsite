@@ -45,7 +45,17 @@
     }
 }
 /*==================Medium Display and Foward==============*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+    .banner-area.banner-2 {
+        background: url(../images/slider/slider11.jpg)50% no-repeat fixed; 
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .user-quotes-area {
+        background: url(../images/slider/quote.jpeg)50% no-repeat fixed; 
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
     .navbar-collapse.collapse {
         margin-top: 20px;
     } 
