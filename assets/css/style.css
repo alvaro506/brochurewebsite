@@ -261,15 +261,6 @@ header.header-area.sticky .navbar-toggle .icon-bar, header.header-area.open .nav
 /*----------------------------------------------------------------
                         Start Banner Section
 ----------------------------------------------------------------*/
-/*
-.banner-area.banner-1 {
-    background: url(../images/banner.jpg)50% no-repeat fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}*/
 .banner-area.banner-2 {
     background: url(../images/slider/slider11.jpg)no-repeat center center;
     -webkit-background-size: cover;
