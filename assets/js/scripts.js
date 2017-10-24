@@ -27,7 +27,9 @@
 		});
 
 		function selectiveBackground () {
-			$('.banner-area').parallax('50%','.3');	
+			if ($(window).width() >= 768 ){
+				$('.banner-area').parallax('50%','.3');	
+			}
 		}
 	    /*-------------------------------------------------------------------
 	  					For Scroll Spy
