@@ -490,9 +490,6 @@ header.header-area.sticky .navbar-toggle .icon-bar, header.header-area.open .nav
     line-height: 35px;
     margin-top: 15px;
 }
-.service-single-item:hover {
-    cursor: pointer;
-}
 /*----------------------------------------------------------------
                         End Service Section
 ----------------------------------------------------------------*/
